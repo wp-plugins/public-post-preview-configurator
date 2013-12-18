@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Public Post Preview Configurator
  * Plugin URI: http://www.bjoerne.com
- * Version: 1.0.0
+ * Version: 1.0.1
  * Description: Enables you to configure 'public post preview' plugin with a user interface.
  * Author: Björn Weinbrenner
  * Author URI: http://www.bjoerne.com/
@@ -12,8 +12,8 @@
 
 include_once dirname(__FILE__).'/options.php';
 
+add_filter( 'ppp_nonce_life', 'ppp_configurator_nonce_life');
 if (is_admin()) {
-	add_filter( 'ppp_nonce_life', 'ppp_configurator_nonce_life');
 	add_action('admin_init', 'ppp_configurator_register_setting');
 	add_action('admin_menu', 'ppp_configurator_add_options_page');
 }
