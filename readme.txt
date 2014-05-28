@@ -1,20 +1,18 @@
 === Public Post Preview Configurator ===
 Contributors: bjoerne
-Tags: public, post, preview, posts, configuration, settings
+Tags: public, post, preview, posts, configuration
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XS98Y5ASSH5S4
 Requires at least: 3.5
-Tested up to: 3.7.1
-Stable tag: trunk
+Tested up to: 3.9.1
+Stable tag: 1.0.2
 License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
 Enables you to configure the 'public post preview' plugin with a user interface.
 
 == Description ==
 
-With this plugin it's possible to configure the expiration time of a link provided by the [Public Post Preview](http://wordpress.org/plugins/public-post-preview/) plugin.
-
-The plugin is developed on [Github](https://github.com/bjoerne2/public-post-preview-configurator). Feel free to fork the project or create pull requests. 
+With this plugin it's possible to configure the expiration time of a link provided by the 'public post preview' plugin.
 
 == Installation ==
 
@@ -25,3 +23,15 @@ The plugin is developed on [Github](https://github.com/bjoerne2/public-post-prev
 == Screenshots ==
 
 1. Options
+
+== Changelog ==
+
+= 1.0.0 =
+* Provide configuration page to configure expiration time of 'public post preview' plugin
+
+= 1.0.1 =
+* Bugfix: ppp_configurator_nonce_life filter was only applied when logged in
+
+= 1.0.2 =
+* Clean up code based on WordPress-Plugin-Boilerplate
+* Remove option when plugin is uninstalled
